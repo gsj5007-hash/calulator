@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>사칙연산 계산기</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="calculator">
+    <h1>사칙연산 계산기</h1>
+
+    <!-- 입력 영역 -->
+    <input type="text" id="num1" placeholder="첫 번째 숫자">
+
+    <select id="operator">
+      <option value="+">+ (더하기)</option>
+      <option value="-">− (빼기)</option>
+      <option value="*">× (곱하기)</option>
+      <option value="/">÷ (나누기)</option>
+    </select>
+
+    <input type="text" id="num2" placeholder="두 번째 숫자">
+
+    <!-- 실행 버튼 -->
+    <button id="calcBtn">계산하기</button>
+
+    <!-- 결과 / 오류 표시 영역 -->
+    <p id="result">결과가 여기에 표시됩니다</p>
+    <p id="error"></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
