@@ -82,9 +82,9 @@ function onCalculate() {
 // ===== 지우기 =====
 function onClear() {
   num1Input.value = "";
-  // 여기에 두 번째 입력칸 비우기
-  // 여기에 결과 문구를 처음 문장으로 되돌리기
-  // 여기에 오류 메시지 비우기
+  num2Input.value = "";
+  resultText.textContent = "결과가 여기에 표시됩니다";
+  errorText.textContent = "";
 }
 
 // ===== 6. 이벤트 연결 =====
