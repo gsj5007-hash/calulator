@@ -5,7 +5,7 @@ const operatorSelect = document.getElementById("operator");
 const calcButton = document.getElementById("calcBtn");
 const resultText = document.getElementById("result");
 const errorText = document.getElementById("error");
-
+const clearButton = document.getElementById("clearBtn");
 // ===== 2. 입력값 검증 =====
 // 문자열을 숫자로 바꾸고, 문제가 있으면 오류 메시지를 돌려준다
 function parseNumber(text, label) {
@@ -79,10 +79,17 @@ function onCalculate() {
     showError(e.message);
   }
 }
+// ===== 지우기 =====
+function onClear() {
+  num1Input.value = "";
+  // 여기에 두 번째 입력칸 비우기
+  // 여기에 결과 문구를 처음 문장으로 되돌리기
+  // 여기에 오류 메시지 비우기
+}
 
 // ===== 6. 이벤트 연결 =====
 calcButton.addEventListener("click", onCalculate);
-
+clearButton.addEventListener("click", onClear);
 // 입력칸에서 Enter 키를 눌러도 계산
 [num1Input, num2Input].forEach(function (input) {
   input.addEventListener("keydown", function (event) {
