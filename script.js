@@ -38,6 +38,11 @@ function calculate(a, b, operator) {
         throw new Error("0으로 나눌 수 없습니다.");
       }
       return a / b;
+    case "%":
+       if (b === 0) {
+        throw new Error("0으로 나머지를 구할 수 없습니다.");
+      }
+      return a % b;
     default:
       throw new Error("알 수 없는 연산자입니다.");
   }
