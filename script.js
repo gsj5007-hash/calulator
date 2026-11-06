@@ -50,7 +50,7 @@ function calculate(a, b, operator) {
 
 // ===== 4. 결과 표시 =====
 function showResult(a, b, operator, answer) {
-  const symbols = { "+": "+", "-": "−", "*": "×", "/": "÷" };
+    const symbols = { "+": "+", "-": "−", "*": "×", "/": "÷", "%": "%" };
   // 0.1 + 0.2 = 0.30000000000000004 같은 오차를 정리
   const rounded = Math.round(answer * 1e10) / 1e10;
   resultText.textContent = `${a} ${symbols[operator]} ${b} = ${rounded}`;
