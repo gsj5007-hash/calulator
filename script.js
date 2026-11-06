@@ -6,6 +6,7 @@ const calcButton = document.getElementById("calcBtn");
 const resultText = document.getElementById("result");
 const errorText = document.getElementById("error");
 const clearButton = document.getElementById("clearBtn");
+const historyList = document.getElementById("history");
 // ===== 2. 입력값 검증 =====
 // 문자열을 숫자로 바꾸고, 문제가 있으면 오류 메시지를 돌려준다
 function parseNumber(text, label) {
