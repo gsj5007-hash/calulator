@@ -90,6 +90,7 @@ function onClear() {
   num2Input.value = "";
   resultText.textContent = "결과가 여기에 표시됩니다";
   errorText.textContent = "";
+  historyList.innerHTML = "";
 }
 
 // ===== 6. 이벤트 연결 =====
