@@ -49,6 +49,10 @@ function showResult(a, b, operator, answer) {
   const rounded = Math.round(answer * 1e10) / 1e10;
   resultText.textContent = `${a} ${symbols[operator]} ${b} = ${rounded}`;
   errorText.textContent = "";
+    // 기록 한 줄 만들기
+  const li = document.createElement("li");   // 새 <li> 만들기
+  li.textContent =  `${a} ${symbols[operator]} ${b} = ${rounded}`;  // 화면 결과와 같은 문장 넣기
+  historyList.prepend(li);                     // 목록 맨 위에 붙이기
 }
 
 function showError(message) {
